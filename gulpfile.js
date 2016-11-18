@@ -93,7 +93,14 @@ gulp.task("copyVendor", function() {
   .pipe(gulp.dest("build/vendor"))
 });
 
-
+gulp.task("index-sprite", function(){
+  var spriteData = gulp.src("img/icons/*.png").pipe(spritesmith({
+    imgName: "index-sprite.png",
+    cssName: "index-sprite.less"
+  }));
+    spriteData.img.pipe(gulp.dest("img")); 
+    spriteData.css.pipe(gulp.dest("less/sprites")); 
+});
 
 
 
