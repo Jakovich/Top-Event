@@ -36,13 +36,13 @@
           </div>
           <div class="describe__logo">
             <h1>Свадебное агенство
-        <span>TOP-EVENT</span>
-      </h1>
+              <span>TOP-EVENT</span>
+            </h1>
           </div>
           <div class="describe__contacts">
             <a class="describe__link" href="#">Обратный звонок</a>
             <a class="describe__link" href="#">email.example.com</a>
-            <button class="describe__btn">Оставить заявку</button>
+            <button class="describe__btn" data-role="modal">Оставить заявку</button>
           </div>
         </div>
       </section>
@@ -72,8 +72,8 @@
               </ul>
             </div>
 
-            <a href="#" class="franchise-photos__prev">&lsaquo;</a>
-            <a href="#" class="franchise-photos__next">&rsaquo;</a>
+            <a href="#" class="slider__prev">&lsaquo;</a>
+            <a href="#" class="slider__next">&rsaquo;</a>
 
           </div>
 
@@ -161,7 +161,7 @@
           <form action="/" method="post" class="form" name="promo-form">
             <input class="form__input" type="text" name="name" placeholder="Ваше имя">
             <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
-            <button class="form__btn" type="submit"></button>
+            <button class="form__btn" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -171,21 +171,27 @@
         <div class="actions__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error, nulla blanditiis totam laboriosam esse, accusamus! Sequi architecto, iure reiciendis iste accusamus saepe sapiente, possimus itaque aliquam, voluptatem consectetur esse.
         </div>
-        <div class="actions__item">
-          <img class="actions__img" src="" alt="">
-          <span class="actions__number">1</span>
+        <div class="actions__item actions__item--left">
+         <div class="actions__img-wrp">
+          <img class="actions__img" src="img/actions_1.jpg" alt="" width="268" height="268">
+          <span class="actions__number ">1</span>
+          </div>
           <h3 class="actions__title">Подготовка сценария свадьбы, её концепции и стиля</h3>
           <p class="actions__exp">Подготовка сценария свадьбы, её концепции и стиля</p>
         </div>
-        <div class="actions__item">
-          <img class="actions__img" src="" alt="">
+        <div class="actions__item actions__item--middle">
+         <div class="actions__img-wrp">
+          <img class="actions__img" src="img/actions_2.jpg" alt="" width="268" height="268">
           <span class="actions__number">2</span>
+          </div>
           <h3 class="actions__title">Выбор ведущего и развлекательной программы</h3>
           <p class="actions__exp">Мы позаботимся, чтобы ведущий устраивал вас, был вам приятен и провел программу качественно.</p>
         </div>
-        <div class="actions__item">
-          <img class="actions__img" src="" alt="">
-          <span class="actions__number">3</span>
+        <div class="actions__item actions__item--right">
+         <div class="actions__img-wrp">
+          <img class="actions__img" src="img/actions_3.jpg" alt="" width="268" height="268">
+          <span class="actions__number actions__number--top">3</span>
+          </div>
           <h3 class="actions__title">Оформление места проведения торжества</h3>
           <p class="actions__exp">Услуга, которая является одной из основных, будет организована креативными и талантливыми людьми.</p>
         </div>
@@ -219,35 +225,38 @@
       </section>
 
       <section class="process">
+       <div class="process__wrapper">
         <h2 class="main-title main-title--bottom">Как мы работаем</h2>
+        
         <div class="process__items">
           <div class="process__item">
             <h3 class="process__title">1 день</h3>
-            <p class="process__exp">Встреча с вами и презентация нашей работы</p>
+            <p class="process__exp process__exp--meet">Встреча с вами и презентация нашей работы</p>
           </div>
           <div class="process__item">
             <h3 class="process__title">1 день</h3>
-            <p class="process__exp">Заключение договора о проведении мероприятия</p>
+            <p class="process__exp process__exp--contract">Заключение договора о проведении мероприятия</p>
           </div>
           <div class="process__item">
             <h3 class="process__title">2-3 день</h3>
-            <p class="process__exp">Разработка нескольких вариантов проведения</p>
+            <p class="process__exp process__exp--develop">Разработка нескольких вариантов проведения</p>
           </div>
           <div class="process__item">
             <h3 class="process__title">от 10 дней до 5 месяцев</h3>
-            <p class="process__exp">Подготовка к свадьбе и выбор поставщиков</p>
+            <p class="process__exp process__exp--product">Подготовка к свадьбе и выбор поставщиков</p>
           </div>
           <div class="process__item">
             <h3 class="process__title">1 день</h3>
-            <p class="process__exp">Репетиция свадебной церемонии (по желанию)</p>
+            <p class="process__exp process__exp--repeat">Репетиция свадебной церемонии (по желанию)</p>
           </div>
           <div class="process__item">
             <h3 class="process__title">1 день</h3>
-            <p class="process__exp">День проведения свадебного торжества</p>
+            <p class="process__exp process__exp--wedding">День проведения свадебного торжества</p>
           </div>
         </div>
         <p class="process__subtitle">Закажите свадьбу прямо сейчас и получите скидку от наших производителей</p>
         <button class="common-btn">Заказать сейчас</button>
+        </div>
       </section>
 
       <section class="subscribe">
@@ -319,9 +328,9 @@
               <ul class="slider__items">
                 <li class="slider__item">
                   <div class="team-item">
-                    <img class="team-item__img" src="" alt="">
+                    <img class="team-item__img" src="img/team_1.jpg" alt="Алексеев" width="470" height="270">
                     <div class="team-item__info">
-                      <img class="team-item__profile" src="" alt="">
+                      <img class="team-item__profile" src="img/team_2.jpg" alt="Алексеев" width="170" height="230">
                       <div class="team-item__text">
                         <p class="team-item__name">Алексей Алексеев</p>
                         <p class="team-item__position">Ведущий</p>
@@ -332,12 +341,12 @@
                 </li>
                 <li class="slider__item">
                   <div class="team-item">
-                    <img class="team-item__img" src="" alt="">
+                    <img class="team-item__img" src="img/team_1.jpg" alt="Алексеев" width="470" height="270">
                     <div class="team-item__info">
-                      <img class="team-item__profile" src="" alt="">
+                      <img class="team-item__profile" src="img/team_2.jpg" alt="Алексеев" width="170" height="230">
                       <div class="team-item__text">
-                        <p class="team-item__name">Алексей Алексеев</p>
-                        <p class="team-item__position">Не ведущий</p>
+                        <p class="team-item__name">Василий Захаров</p>
+                        <p class="team-item__position">Не Ведущий</p>
                         <p class="team-item__detail">Сейчас в своем активе я имею более 300 свадебных торжеств, проведенных в совершенно разных стилях. Обратившись ко мне, вы получаете недорогого ведущего на свадьбу в Москве. </p>
                       </div>
                     </div>
@@ -347,8 +356,8 @@
               </ul>
             </div>
 
-            <a href="#" class="franchise-photos__prev">&lsaquo;</a>
-            <a href="#" class="franchise-photos__next">&rsaquo;</a>
+            <a href="#" class="slider__prev">&lsaquo;</a>
+            <a href="#" class="slider__next">&rsaquo;</a>
 
           </div>
 
@@ -363,32 +372,34 @@
       </section>
 
       <section class="feedbacks">
-        <h2 class="main-title main-title--bottom">Отзывы наших клиентов</h2>
-        <div class="slider">
+        <h2 class="main-title">Отзывы наших клиентов</h2>
+        <div class="feedbacks__slider">
+        <div class="slider slider--feddback">
           <div class="slider__jcarousel-wrapper">
             <div class="slider__jcarousel">
               <ul class="slider__items">
                 <li class="slider__item">
                   <div class="feedback">
-                    <img class="feedback__img" src="" alt="">
-                    <img class="feedback__photo" src="" alt="">
+                    <img class="feedback__img" src="img/feedbacks/feedback-1.jpg" width="340" height="430" alt="">
+                    <img class="feedback__photo" src="img/feedbacks/feedback-photo-1.jpg" width="110" height="110" alt="">
                   </div>
                 </li>
                 <li class="slider__item">
                   <div class="feedback">
                     <img class="feedback__img" src="" alt="">
-                    <img class="feedback__photo" src="" alt="">
+                    <img class="feedback__photo" src="img/feedbacks/feedback-photo-1.jpg" width="110" height="110" alt="">
                   </div>
                 </li>
 
               </ul>
             </div>
 
-            <a href="#" class="franchise-photos__prev">&lsaquo;</a>
-            <a href="#" class="franchise-photos__next">&rsaquo;</a>
+            <a href="#" class="slider__prev"><i class="fa fa-arrow-left"></i></a>
+            <a href="#" class="slider__next"><i class="fa fa-arrow-right"></i></a>
 
           </div>
 
+        </div>
         </div>
       </section>
 
@@ -423,6 +434,7 @@
     </main>
 
     <footer class="main-footer">
+     <div class="main-footer__wrapper">
       <div class="main-footer__copyright">«ООО» Топ-эвент. 2016@ политика конфиденциальности</div>
       <div class="main-footer__contacts">
         <div class="main-footer__phone">+7 837 546 28</div>
@@ -436,6 +448,7 @@
             </a>
           </div>
         </div>
+      </div>
       </div>
     </footer>
   </div>

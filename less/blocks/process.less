@@ -1,0 +1,125 @@
+.process__wrapper {
+  margin: 0 auto;
+  max-width: 1110px; 
+}
+.process__item {
+  background-color: #ffffff;
+  width: 380px;
+  padding: 10px 18px;
+  
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  margin-bottom: 60px;
+  border-radius: 10px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    background-color: @red;
+    left: -20px;
+  }
+  
+  &::after {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 25px;
+    border: 2px solid @red;
+    border-radius: 50%;
+    top: 0;
+   
+    left: -30px;
+  }
+  
+}
+
+
+
+
+
+.process__title {
+  font-size: 20px;
+  font-weight: 600;
+  color: @red;
+  margin: 0;
+}
+
+.process__exp {
+  padding-right: 90px;
+  font-size: 20px;
+  margin: 13px 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    width: 0;
+	height: 0;
+    left: -33px; 
+    top: 0;
+	border-top: 10px solid transparent;
+	border-right: 16px solid #ffffff;
+	border-bottom: 10px solid transparent;
+    
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    right: -5px;
+    bottom: -10px;
+    background-image: url('../img/index-sprite.png')
+  }
+}
+
+
+.process__exp--meet {
+  &::after {
+    width: @meet-width;
+    height: @meet-height;
+    background-position: @meet-offset-x @meet-offset-y;
+ }
+}
+
+.process__exp--contract {
+  &::after {
+    width: @contract-width;
+    height: @contract-height;
+    background-position: @contract-offset-x @contract-offset-y;
+  }
+}
+
+
+
+.process__exp--develop {
+  &::after {
+    width: @develop-width;
+    height: @develop-height;
+    background-position: @develop-offset-x @develop-offset-y;
+  }
+}
+
+
+.process__exp--product {
+  &::after {
+    width: @product-width;
+    height: @product-height;
+    background-position: @product-offset-x @product-offset-y;
+  }
+}
+
+.process__exp--repeat {
+  &::after {
+    width: @repeat-width;
+    height: @repeat-height;
+    background-position: @repeat-offset-x @repeat-offset-y;
+  }
+}
+
+.process__exp--wedding {
+  &::after {
+    width: @wedding-width;
+    height: @wedding-height;
+    background-position: @wedding-offset-x @wedding-offset-y;
+  }
+}

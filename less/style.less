@@ -1,16 +1,63 @@
 @import "node_modules/normalize.less/normalize.less";
+@import "fonts/awesome/font-awesome.less";
 @import "variables.less";
+@import "sprites/index-sprite.less";
+@import "blocks/main-nav.less";
+@import "blocks/describe.less";
+@import "blocks/actions.less";
+@import "blocks/form.less";
+@import "blocks/time.less";
+@import "blocks/slider.less";
+@import "blocks/feedback.less";
+@import "blocks/team-item.less";
+@import "blocks/process.less";
 @import "blocks/main-title.less";
+@import "blocks/main-footer.less";
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+ 
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Medium.ttf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-SemiBold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url("../fonts/Raleway-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
 
 body {
   font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 400;
   min-width: 1024px;
+  color: @text-gray;
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1580px;
-  padding: 0 10px;
+  max-width: 1600px;
+  padding: 0;
   min-width: 1024px;
+  background-image: url('../img/bg-common.jpg');
+}
+
+a {
+    text-decoration: none;
 }
 

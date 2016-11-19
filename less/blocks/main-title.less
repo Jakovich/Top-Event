@@ -2,4 +2,19 @@
   font-family: 'Lobster', cursive;
   font-size: 35px;
   text-align: center;
+  color: @red;
+}
+
+.main-title--bottom {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    height: 28px;
+    width: 618px;
+    left: 50%;
+    margin-left: -309px;
+    background-image: url('../img/bottom-shape.png');
+    bottom: -40px;
+  }
 }

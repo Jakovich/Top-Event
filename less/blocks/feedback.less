@@ -1,0 +1,33 @@
+.feedbacks__slider {
+  width: 962px;
+  margin: 0 auto;
+  position: relative;
+  padding: 70px 0;
+  border: 1px solid @red;
+  &::before {
+    position: absolute;
+    content: '';
+    height: 39px;
+    top: -19.5px;
+    width: 438px;
+    left: 50%;
+    margin-left: -219px;
+    background-image: url('../img/slider-shape.png');
+    z-index: 5;
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: auto;
+    bottom: -19.5px;
+    height: 39px;
+    width: 438px;
+    left: 50%;
+    margin-left: -219px;
+    background-image: url('../img/slider-shape.png');
+    z-index: 5;
+  }
+}
+.feedback__photo {
+  border-radius: 50%;
+}
