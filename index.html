@@ -10,6 +10,8 @@
   <script type="text/javascript" src="vendor/syotimer/jquery.syotimer.min.js"></script>
   <script type="text/javascript" src="vendor/jcarousel/jquery.jcarousel.min.js"></script>
   <script type="text/javascript" src="vendor/colorbox/jquery.colorbox-min.js"></script>
+  <script type="text/javascript" src="vendor/inputmask/inputmask.min.js"></script>
+  <script type="text/javascript" src="vendor/inputmask/jquery.inputmask.bundle.min.js"></script>
 </head>
 
 <body>
@@ -33,20 +35,23 @@
 
     <main>
       <section class="intro">
-        <div class="describe">
-          <div class="describe__info">
-            <h2 class="describe__name">Свадебная организация</h2>
-            <div class="describe__exp">Организация свадеб &#171;под ключ&#187;</div>
-          </div>
-          <div class="describe__logo">
-            <h1>Свадебное агенство
+        <div class="intro__wrapper">
+          <div class="describe">
+            <div class="describe__info">
+              <h2 class="describe__name">Свадебная организация</h2>
+              <div class="describe__exp">Организация свадеб &#171;под&nbsp;ключ&#187;</div>
+            </div>
+            <div class="describe__logo">
+              <h1>Свадебное агенство
               <span>TOP-EVENT</span>
             </h1>
-          </div>
-          <div class="describe__contacts">
-            <a class="describe__link" href="#">Обратный звонок</a>
-            <a class="describe__link" href="#">email.example.com</a>
-            <button class="describe__btn" data-role="modal">Оставить заявку</button>
+            </div>
+            <div class="describe__contacts">
+              <a class="describe__link" href="#">Обратный звонок</a>
+              <a class="describe__link" href="#">email.example.com</a>
+              <div class="describe__phone">+7 837 546 28</div>
+              <button class="common-btn common-btn--describe">Оставить заявку</button>
+            </div>
           </div>
         </div>
       </section>
@@ -76,93 +81,165 @@
               </ul>
             </div>
 
-            <a href="#" class="slider__prev">&lsaquo;</a>
-            <a href="#" class="slider__next">&rsaquo;</a>
+            <a href="#" class="slider__prev"><i class="fa fa-arrow-left"></i></a>
+            <a href="#" class="slider__next"><i class="fa fa-arrow-right"></i></a>
 
           </div>
 
         </div>
 
         <div class="advantages">
-          <h2 class="main-title">Почему нас выбрали уже 750 счастливых пары</h2>
-          <div class="advatages__column">
-            <div class="advatages__item">
+          <div class="advantages__wrapper">
+            <h2 class="main-title">Почему нас выбрали уже 750 счастливых пары</h2>
+            <div class="advantages__content">
+              <div class="advatages__column advatages__column--left">
+                <div class="advatages__item">
 
-              <div class="advatages__title">Опытные менеджеры</div>
-              <p class="advatages__text">Наши менеджеры профессионалы своего дела. Они организовали на отлично большое количество торжеств и знают своё дело.</p>
-            </div>
-            <div class="advantages__item">
-              <div class="advatages__title">Надежные поставщики</div>
-              <p class="advatages__text">На рынке свадебных услуг большое количество непрофессионалов. Мы работаем только с проверенными поставщиками, которые зарекомендовали себя в течение нескольких лет сотрудничества с нами.</p>
-            </div>
-            <div class="advantages__item">
-              <div class="advatages__title">Индивидуально разработанный сценарий свадьбы</div>
-              <p class="advatages__text">Наши менеджеры профессионалы своего дела. Они организовали на отлично большое количество торжеств и знают своё дело.</p>
-            </div>
-          </div>
-          <div class="advantages__img"><img src="" alt=""></div>
-          <div class="advatages__column">
-            <div class="advantages__item">
-              <div class="advatages__title">Свадебный распорядитель</div>
-              <p class="advatages__text">В день вашего торжества мы предоставляем свадебного распорядителя. Он будет решать любые возникающие сложности от булавки до доставки гостей.</p>
-            </div>
-            <div class="advantages__item">
-              <div class="advatages__title">Свадебные репетиции</div>
-              <p class="advatages__text">День свадьбы достаточно насыщен различными событиями. Чтобы вы были уверены, что все пройдет гладко и как и задумано мы проводим репетиции накануне торжества.</p>
-            </div>
-            <div class="advantages__item">
-              <div class="advatages__title">Организация свадеб под ключ</div>
-              <p class="advatages__text">Для того чтобы день торжества запомнился только яркими воспоминаниями. Мы берем на себя решение всех возникающих вопросов и задач от А до Я.</p>
+                  <div class="advatages__title">Опытные менеджеры</div>
+                  <p class="advatages__text">Наши менеджеры профессионалы своего дела. Они организовали на отлично большое количество торжеств и знают своё дело.</p>
+                </div>
+                <div class="advantages__item">
+                  <div class="advatages__title">Надежные поставщики</div>
+                  <p class="advatages__text">На рынке свадебных услуг большое количество непрофессионалов. Мы работаем только с проверенными поставщиками, которые зарекомендовали себя в течение нескольких лет сотрудничества с нами.</p>
+                </div>
+                <div class="advantages__item">
+                  <div class="advatages__title">Индивидуально разработанный сценарий свадьбы</div>
+                  <p class="advatages__text">Наши менеджеры профессионалы своего дела. Они организовали на отлично большое количество торжеств и знают своё дело.</p>
+                </div>
+              </div>
+              <div class="advantages__img"><img src="img/advantages.jpg" alt="" width="370" height="590"></div>
+              <div class="advatages__column">
+                <div class="advantages__item">
+                  <div class="advatages__title">Свадебный распорядитель</div>
+                  <p class="advatages__text">В день вашего торжества мы предоставляем свадебного распорядителя. Он будет решать любые возникающие сложности от булавки до доставки гостей.</p>
+                </div>
+                <div class="advantages__item">
+                  <div class="advatages__title">Свадебные репетиции</div>
+                  <p class="advatages__text">День свадьбы достаточно насыщен различными событиями. Чтобы вы были уверены, что все пройдет гладко и как и задумано мы проводим репетиции накануне торжества.</p>
+                </div>
+                <div class="advantages__item">
+                  <div class="advatages__title">Организация свадеб под ключ</div>
+                  <p class="advatages__text">Для того чтобы день торжества запомнился только яркими воспоминаниями. Мы берем на себя решение всех возникающих вопросов и задач от А до Я.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
       </section>
 
       <section class="about">
-        <h2 class="main-title main-title--white">Коротко о нашем агенстве</h2>
-        <h1 class="about__title">TOP-EVENT</h1>
-        <p class="about__text">Наше агентство имеет большой опыт в проведении свадебных торжеств, и мы выполняем свою работу качественно и красиво. Почему именно мы?</p>
-        <p class="about__text">Наша команда, работает только на положительный результат, опыт который мы приобрели, делает наши услуги выгодными и подходящими, для любого заказчика, и неважно насколько сложна или непредсказуема задумка вашего торжества.</p>
+        <div class="about__wrapper">
+          <h2 class="main-title main-title--white">Коротко о нашем агенстве</h2>
+          <h1 class="about__title">TOP-EVENT</h1>
+          <p class="about__text">Наше агентство имеет большой опыт в проведении свадебных торжеств, и мы выполняем свою работу качественно и красиво. Почему именно мы?</p>
+          <p class="about__text">Наша команда, работает только на положительный результат, опыт который мы приобрели, делает наши услуги выгодными и подходящими, для любого заказчика, и неважно насколько сложна или непредсказуема задумка вашего торжества.</p>
+        </div>
       </section>
 
       <section class="facts">
-        <h2 class="main-title main-title--bottom">Top-Event в цифрах</h2>
-        <div class="facts__items">
-          <div class="facts__item">
-            <div class="facts__name">Мероприятий проведено</div>
-            <div class="facts__number">более 350</div>
-          </div>
-          <div class="facts__item">
-            <div class="facts__name">Гостей обслужено</div>
-            <div class="facts__number">15 000 человек</div>
-          </div>
-          <div class="facts__item">
-            <div class="facts__name">Общий бюджет организованых свадеб</div>
-            <div class="facts__number">350 млн &#8381;</div>
-          </div>
-          <div class="facts__item">
-            <div class="facts__name">Шампаского выпито на мероприятиях</div>
-            <div class="facts__number">более 5 000 литров</div>
-          </div>
+        <div class="facts-wrapper">
+          <h2 class="main-title main-title--bottom">Top-Event в цифрах</h2>
+          <div class="facts__items">
+            <div class="facts__item">
+              <div class="facts__name">Мероприятий проведено</div>
+              <div class="facts__number">более 350</div>
+            </div>
+            <div class="facts__item">
+              <div class="facts__name">Гостей обслужено</div>
+              <div class="facts__number">15 000
+                <br><span class="facts__sm">человек</span></div>
+            </div>
+            <div class="facts__item">
+              <div class="facts__name">Общий бюджет организованых свадеб</div>
+              <div class="facts__number">350 млн.
+                <br>&#8381;</div>
+            </div>
+            <div class="facts__item">
+              <div class="facts__name">Шампаского выпито на&nbsp;мероприятиях</div>
+              <div class="facts__number"><span class="facts__sm">более 5 000 литров</span></div>
+            </div>
 
+          </div>
         </div>
       </section>
 
       <section class="promo">
-        <h2 class="main-title">Специальное предложение!</h2>
-        <div class="timer" id="promo-timer"></div>
-        <div class="promo__text">
-          <div class="promo__title">Букет невесты в подарок!</div>
-          <p class="promo__exp">Оставьте заявку на орагнизацию торжества
-            <span>И получите великолепный букет невесты в подарок</span>
-          </p>
+        <div class="promo__wrapper">
+          <h2 class="main-title">Специальное предложение!</h2>
+          <div class="timer" id="promo-timer"></div>
+          <div class="promo__content">
+            <div class="promo__text">
+              <div class="promo__title">Букет невесты в подарок!</div>
+              <p class="promo__exp">Оставьте заявку на орагнизацию торжества</p>
 
+              <p class="promo__exp promo__exp--semibold">И получите великолепный букет невесты&nbsp;в&nbsp;подарок</p>
+
+            </div>
+            <img class="promo__img" src="img/promo.jpg" width="318" height="318" alt="">
+            <div class="promo__form">
+              <h3 class="promo__form-title">Оставить заявку</h3>
+              <form action="/" method="post" class="form form__promo" name="promo-form">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                <input class="form__input" type="text" name="email" placeholder="Ваш email">
+                <button class="form__btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
         </div>
-        <img class="promo__img" src="" alt="">
-        <div class="promo__form">
-          <h3 class="promo__form-title">Оставить заявку</h3>
-          <form action="/" method="post" class="form" name="promo-form">
+      </section>
+
+      <section class="actions">
+        <div class="actions__wrapper">
+          <h2 class="main-title main-title--bottom">Что мы делаем:</h2>
+          <div class="actions__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error, nulla blanditiis totam laboriosam esse, accusamus! Sequi architecto, iure reiciendis iste accusamus saepe sapiente, possimus itaque aliquam, voluptatem consectetur esse.
+          </div>
+          <div class="actions__items">
+            <div class="actions__item actions__item--left">
+              <div class="actions__img-wrp">
+                <img class="actions__img" src="img/actions_1.jpg" alt="" width="268" height="268">
+                <span class="actions__number ">1</span>
+              </div>
+              <h3 class="actions__title">Подготовка сценария свадьбы, её&nbsp;концепции и стиля</h3>
+              <p class="actions__exp">Подготовка сценария свадьбы, её концепции и стиля</p>
+            </div>
+            <div class="actions__item actions__item--middle">
+              <div class="actions__img-wrp">
+                <img class="actions__img" src="img/actions_2.jpg" alt="" width="268" height="268">
+                <span class="actions__number">2</span>
+              </div>
+              <h3 class="actions__title">Выбор ведущего и развлекательной&nbsp;программы</h3>
+              <p class="actions__exp">Мы позаботимся, чтобы ведущий устраивал вас, был вам приятен и провел программу качественно.</p>
+            </div>
+            <div class="actions__item actions__item--right">
+              <div class="actions__img-wrp">
+                <img class="actions__img" src="img/actions_3.jpg" alt="" width="268" height="268">
+                <span class="actions__number actions__number--top">3</span>
+              </div>
+              <h3 class="actions__title">Оформление места проведения торжества</h3>
+              <p class="actions__exp">Услуга, которая является одной из основных, будет организована креативными и талантливыми людьми.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="payment">
+        <div class="payment__wrapper">
+          <h2 class="main-title main-title--white">За что вы платите агенству?</h2>
+          <p class="payment__text">Мы предоставляем вам персонального менеджера, который разработает свадьбу вашей мечты, возьмет на себя все организационные моменты и решит любые возникающие сложности.</p>
+          <p class="payment__text">Наше агентство поможет вам рационально использовать средства, выделенные на организацию торжества.</p>
+          <p class="payment__text">Мы вместе расставим приоритеты в распределении средств, чтобы ни один рубль не был потрачен впустую.</p>
+          <p class="payment__subtitle">Средний бюджет наших свадеб составляет до 1 500 000 рублей</p>
+        </div>
+      </section>
+
+      <section class="questions">
+        <div class="questions__wrapper">
+          <h2 class="main-title main-title--bottom">Появились вопросы?</h2>
+
+          <p class="questions__text">Свяжитесь с нами по телефону: <b>+7 948 38 54 342</b></p>
+          <p class="questions__text">Или оставьте заявку и мы ва перезвоним в течении получаса!</p>
+          <form action="/" method="post" class="form">
             <input class="form__input" type="text" name="name" placeholder="Ваше имя">
             <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
             <button class="form__btn" type="submit">Отправить</button>
@@ -170,62 +247,13 @@
         </div>
       </section>
 
-      <section class="actions">
-        <h2 class="main-title main-title--bottom">Что мы делаем:</h2>
-        <div class="actions__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid error, nulla blanditiis totam laboriosam esse, accusamus! Sequi architecto, iure reiciendis iste accusamus saepe sapiente, possimus itaque aliquam, voluptatem consectetur esse.
-        </div>
-        <div class="actions__item actions__item--left">
-          <div class="actions__img-wrp">
-            <img class="actions__img" src="img/actions_1.jpg" alt="" width="268" height="268">
-            <span class="actions__number ">1</span>
-          </div>
-          <h3 class="actions__title">Подготовка сценария свадьбы, её концепции и стиля</h3>
-          <p class="actions__exp">Подготовка сценария свадьбы, её концепции и стиля</p>
-        </div>
-        <div class="actions__item actions__item--middle">
-          <div class="actions__img-wrp">
-            <img class="actions__img" src="img/actions_2.jpg" alt="" width="268" height="268">
-            <span class="actions__number">2</span>
-          </div>
-          <h3 class="actions__title">Выбор ведущего и развлекательной программы</h3>
-          <p class="actions__exp">Мы позаботимся, чтобы ведущий устраивал вас, был вам приятен и провел программу качественно.</p>
-        </div>
-        <div class="actions__item actions__item--right">
-          <div class="actions__img-wrp">
-            <img class="actions__img" src="img/actions_3.jpg" alt="" width="268" height="268">
-            <span class="actions__number actions__number--top">3</span>
-          </div>
-          <h3 class="actions__title">Оформление места проведения торжества</h3>
-          <p class="actions__exp">Услуга, которая является одной из основных, будет организована креативными и талантливыми людьми.</p>
-        </div>
-      </section>
-
-      <section class="payment">
-        <h2 class="main-title main-title--white">За что вы платите агенству?</h2>
-        <p class="payment__text">Мы предоставляем вам персонального менеджера, который разработает свадьбу вашей мечты, возьмет на себя все организационные моменты и решит любые возникающие сложности.</p>
-        <p class="payment__text">Наше агентство поможет вам рационально использовать средства, выделенные на организацию торжества.</p>
-        <p class="payment__text">Мы вместе расставим приоритеты в распределении средств, чтобы ни один рубль не был потрачен впустую.</p>
-        <p class="payment__subtitle">Средний бюджет наших свадеб составляет до 1 500 000 рублей</p>
-      </section>
-
-      <section class="questions">
-        <h2 class="main-title main-title--bottom">Появились вопросы?</h2>
-
-        <p class="questions__text">Свяжитесь с нами по телефону: <b>+7 948 38 54 342</b></p>
-        <p class="questions__text">Или оставьте заявку и мы ва перезвоним в течении получаса!</p>
-        <form action="/" method="post" class="form">
-          <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-          <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
-          <button class="form__btn" type="submit"></button>
-        </form>
-      </section>
-
       <section class="time">
-        <h2 class="main-title main-title--white">Почему стоит начинать планоировать торжество зараннее?</h2>
-        <p class="time__text">У лучших фотографов и операторов, ресторанов, популярных ведущих, звезд эстрады и артистов график расписан на несколько месяцев вперед, а в некоторых случаях может достигать и полугода.</p>
-        <p class="time__text">Поэтому, если у вас есть особые пожелания по организации торжества, необходимо подумать об этом заранее, чтобы не выбирать «из того, что останется».</p>
-        <button class="common-btn">Заказать сейчас</button>
+        <div class="time__wrapper">
+          <h2 class="main-title main-title--white">Почему стоит начинать планоировать торжество зараннее?</h2>
+          <p class="time__text">У лучших фотографов и операторов, ресторанов, популярных ведущих, звезд эстрады и артистов график расписан на несколько месяцев вперед, а в некоторых случаях может достигать и полугода.</p>
+          <p class="time__text">Поэтому, если у вас есть особые пожелания по организации торжества, необходимо подумать об этом заранее, чтобы не выбирать «из того, что останется».</p>
+          <button class="common-btn" data-role="modal">Заказать сейчас</button>
+        </div>
       </section>
 
       <section class="process">
@@ -259,75 +287,82 @@
             </div>
           </div>
           <p class="process__subtitle">Закажите свадьбу прямо сейчас и получите скидку от наших производителей</p>
-          <button class="common-btn">Заказать сейчас</button>
+          <button class="common-btn" data-role="modal">Заказать сейчас</button>
         </div>
       </section>
 
       <section class="subscribe">
         <h2 class="main-title main-title--white">Подпишитесь на нас и узнавайте о новых акциях и мероприятиях</h2>
-        <form action="/" method="post" class="form" name="subcribe">
-          <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-          <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
-          <button class="form__btn" type="submit">Подписаться</button>
-        </form>
+        <div class="subscribe__form">
+          <form action="/" method="post" class="form form--subscribe" name="subcribe">
+            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+            <input class="form__input" type="text" name="email" placeholder="Ваш email">
+            <button class="form__btn" type="submit">Подписаться</button>
+          </form>
+        </div>
       </section>
 
       <section class="portfolio">
-       <div class="portfolio__wrapper">
-        <h2 class="main-title main-title--bottom">Свадьбы, которые мы организовали:</h2>
-        <div class="portfolio__item">
-          <h3 class="portfolio__title">Алексей и Ольга</h3>
-          <div class="portfolio__row">
-          <div class="portfolio__photo portfolio__photo--big">
-            <img src="img/portfolio_big.jpg" alt="" width="572" height="298">
-            <a href="img/portfolio_big/portfolio_1.jpg" class="portfolio__show-btn">+</a>
-          </div>
-          <div class="portfolio__photo portfolio__photo--small">
-            <img src="img/portfolio_small1.jpg" width="275" height="298" alt="">
-            <a href="img/portfolio_big/portfolio_2.jpg" class="portfolio__show-btn">+</a>
-          </div>
-          <div class="portfolio__photo portfolio__photo--small">
-            <img src="img/portfolio_small2.jpg" width="275" height="298" alt="">
-            <a href="img/portfolio_big/portfolio_3.jpg" class="portfolio__show-btn">+</a>
-          </div>
-          </div>
-          <div class="portfolio__row">
-          <div class="portfolio__photo portfolio__photo--medium">
-            <img src="img/portfolio_medium.jpg" width="467" height="298" alt="">
-            <a href="img/portfolio_big/portfolio_4.jpg" class="portfolio__show-btn">+</a>
-          </div>
-          <div class="portfolio__quote">
-            <p class="portfolio__text">Отличное агентство. Боялись, что отдадим залог, а нас обманут, или чего другого. Но договор, который мы составили на месте, меня порадовал. Все было узаконено».</p>
-            <p class="portfolio__signature">Алексей</p>
+        <div class="portfolio__wrapper">
+          <h2 class="main-title main-title--bottom">Свадьбы, которые мы организовали:</h2>
+          <div class="portfolio__item">
+            <h3 class="portfolio__title">Алексей и Ольга</h3>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--big">
+                <img src="img/portfolio_big.jpg" alt="" width="572" height="298">
+                <a href="img/portfolio_big/portfolio_1.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio_small1.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/portfolio_2.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio_small2.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/portfolio_3.jpg" class="portfolio__show-btn">+</a>
+              </div>
+            </div>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--medium">
+                <img src="img/portfolio_medium.jpg" width="467" height="298" alt="">
+                <a href="img/portfolio_big/portfolio_4.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__quote">
+                <p class="portfolio__text">Отличное агентство. Боялись, что отдадим залог, а нас обманут, или чего другого. Но договор, который мы составили на месте, меня порадовал. Все было узаконено».</p>
+                <p class="portfolio__signature">Алексей</p>
 
-            <a href="img/portfolio_big/portfolio_5.jpg" class="portfolio__link" href="#">Посмотреть подробнее</a>
+                <a href="#" class="portfolio__link" href="#">Посмотреть подробнее</a>
+              </div>
+            </div>
           </div>
+          <div class="paginator">
+
+            <a href="#" class="paginator__item paginator__item--current">1</a>
+            <a href="#" class="paginator__item">2</a>
+            <a href="#" class="paginator__item">3</a>
+            <a href="#" class="paginator__item">4</a>
+
           </div>
-        </div>
-        <div class="paginator">
-
-          <a href="#" class="paginator__item paginator__item--current">1</a>
-          <a href="#" class="paginator__item">2</a>
-          <a href="#" class="paginator__item">3</a>
-          <a href="#" class="paginator__item">4</a>
-
-        </div>
         </div>
       </section>
 
-      <section class="order">
-        <h2 class="main-title">Уже решили заказать у нас празднование?</h2>
-        <p class="order__text">
-          Заполните форму и мы свяжемся с вами в течении 30 минут, чтобы обсудить детали!
-        </p>
-        <form action="/" method="post" class="form">
-          <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
-          <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+      <section class="connect">
+        <div class="connect__wrapper">
+          <h2 class="main-title">Уже решили заказать у нас празднование?</h2>
+          <p class="connect__text">
+            Заполните форму и мы свяжемся с вами в течении 30 минут, чтобы обсудить детали!
+          </p>
+          <div class="connect__form">
+            <form action="/" method="post" class="form form--connect">
+              <div class="form__row">
+                <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
 
-          <input class="form__input" type="text" name="email" placeholder="Ваше email">
-
-          <button class="form__btn" type="submit">Заказать сейчас</button>
-        </form>
+                <input class="form__input" type="text" name="email" placeholder="Ваш email">
+              </div>
+              <button class="form__btn" type="submit">Заказать сейчас</button>
+            </form>
+          </div>
+        </div>
       </section>
 
       <section class="team">
@@ -366,8 +401,8 @@
               </ul>
             </div>
 
-            <a href="#" class="slider__prev">&lsaquo;</a>
-            <a href="#" class="slider__next">&rsaquo;</a>
+            <a href="#" class="slider__prev"><i class="fa fa-arrow-left"></i></a>
+            <a href="#" class="slider__next"><i class="fa fa-arrow-right"></i></a>
 
           </div>
 
@@ -378,7 +413,7 @@
       <section class="order">
         <h2 class="main-title main-title--white">Доверяйте организацию вашего торжества профессионалам</h2>
         <p class="order__text">все заботы по организации мы берём на себя. За время работы мы провели множество свадеб в России и за рубежом. Но гордимся мы не количеством, а качеством и уникальностью каждой свадьбы. Каждое торжество мы готовим с особым трепетом, вдохновением и уверенностью в том, что это будет самый лучший день в вашей жизни.</p>
-        <button class="common-btn">Заказать сейчас</button>
+        <button class="common-btn" data-role="modal">Заказать сейчас</button>
       </section>
 
       <section class="feedbacks">
@@ -389,15 +424,15 @@
               <div class="slider__jcarousel">
                 <ul class="slider__items">
                   <li class="slider__item">
-                    <div class="feedback">
-                      <img class="feedback__img" src="img/feedbacks/feedback-1.jpg" width="340" height="430" alt="">
-                      <img class="feedback__photo" src="img/feedbacks/feedback-photo-1.jpg" width="110" height="110" alt="">
+                    <div class="feedbacks__item">
+                      <img class="feedbacks__img" src="img/feedbacks/feedback-1.jpg" width="340" height="430" alt="">
+                      <img class="feedbacks__photo" src="img/feedbacks/feedback-photo-1.jpg" width="110" height="110" alt="">
                     </div>
                   </li>
                   <li class="slider__item">
-                    <div class="feedback">
-                      <img class="feedback__img" src="" alt="">
-                      <img class="feedback__photo" src="img/feedbacks/feedback-photo-1.jpg" width="110" height="110" alt="">
+                    <div class="feedbacks__item">
+                      <img class="feedbacks__img" src="img/feedbacks/feedback-1.jpg" width="340" height="430" alt="">
+                      <img class="feedbacks__photo" src="img/feedbacks/feedback-photo-1.jpg" width="110" height="110" alt="">
                     </div>
                   </li>
 
@@ -414,33 +449,38 @@
       </section>
 
       <section class="closing">
-        <h2 class="main-title main-title--white">Уже решились воспользоваться нашими услугами?</h2>
-        <p class="closing__text">Заполните форму заявки и получите шикарный букет невесты в подарок, а мы вам перезвоним и уточним подробности</p>
-        <form action="/" method="post" class="form">
-          <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-          <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
-          <textarea class="form__textarea" name="message" cols="30" rows="5"></textarea>
-          <button class="form__btn" type="submit">Отправить заявку</button>
-        </form>
+        <div class="closing__wrapper">
+          <h2 class="main-title main-title--white">Уже решились воспользоваться нашими услугами?</h2>
+          <p class="closing__text">Заполните форму заявки и получите шикарный букет невесты в подарок, а мы вам перезвоним и уточним подробности</p>
+          <div class="closing__form">
+            <form action="/" method="post" class="form form--closing">
+              <div class="form__row">
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                <input class="form__input" type="text" name="phone" placeholder="Ваш телефон">
+              </div>
+              <textarea class="form__textarea" name="message" cols="30" rows="4" placeholder="Особые пожелания"></textarea>
+              <button class="form__btn" type="submit">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+        <div class="describe">
+          <div class="describe__info">
+            <h2 class="describe__name">Свадебная организация</h2>
+            <div class="describe__exp">Организация свадеб &#171;под ключ&#187;</div>
+          </div>
+          <div class="describe__logo describe__logo--bottom">
+            <h1>Свадебное агенство
+              <span>TOP-EVENT</span>
+            </h1>
+          </div>
+          <div class="describe__contacts">
+            <div class="describe__phone">+7 837 546 28</div>
 
+            <a class="describe__link describe__link--red" href="#">Обратный звонок</a>
+            <a class="describe__link describe__link--red" href="#">email.example.com</a>
+          </div>
+        </div>
       </section>
-      <div class="describe">
-        <div class="describe__info">
-          <h2 class="describe__name">Свадебная организация</h2>
-          <div class="describe__exp">Организация свадеб &#171;под ключ&#187;</div>
-        </div>
-        <div class="describe__logo">
-          <h1>Свадебное агенство
-        <span>TOP-EVENT</span>
-      </h1>
-        </div>
-        <div class="describe__contacts">
-          <a class="describe__link" href="#">Обратный звонок</a>
-          <a class="describe__link" href="#">email.example.com</a>
-          <button class="describe__btn">Оставить заявку</button>
-        </div>
-      </div>
-
     </main>
 
     <footer class="main-footer">
@@ -449,14 +489,17 @@
         <div class="main-footer__contacts">
           <div class="main-footer__phone">+7 837 546 28</div>
           <div class="main-footer__social">
-            <div class="social-links">
-              <a href="#" class="social-link social-link--vk" title="Vkontakte">
-              </a>
-              <a href="#" class="social-link social-link--facebook" title="Facebook">
-              </a>
-              <a href="#" class="social-link social-link--inst" title="Instagram">
-              </a>
-            </div>
+
+            <a href="#" class="main-footer__social-link main-footer__social--vk" title="Vkontakte">
+              <i class="fa fa-vk"></i>
+            </a>
+            <a href="#" class="main-footer__social-link main-footer__social--facebook" title="Facebook">
+              <i class="fa fa fa-facebook-official"></i>
+            </a>
+            <a href="#" class="main-footer__social-link main-footer__social-link--inst" title="Instagram">
+              <i class="fa fa fa fa-instagram"></i>
+            </a>
+
           </div>
         </div>
       </div>
@@ -466,10 +509,14 @@
   <div class="popup">
     <h2 class="main-title main-title--bottom main-title--small">Оставьте заявку, мы перезвоним вам через полчаса и все обсудим</h2>
     <div class="popup__form">
-      <form action="/" method="post" class="form">
-        <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-        <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+      <form action="/" method="post" class="form form--popup">
+        <div class="form__row">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+
+          <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+        </div>
         <button class="form__btn" type="submit">Оставить заявку</button>
+
       </form>
     </div>
   </div>

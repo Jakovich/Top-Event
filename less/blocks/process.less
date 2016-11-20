@@ -2,6 +2,11 @@
   margin: 0 auto;
   max-width: 1110px; 
 }
+
+.process__items {
+  margin-left: 410px;
+}
+
 .process__item {
   background-color: #ffffff;
   width: 380px;
@@ -14,25 +19,55 @@
   &::before {
     position: absolute;
     content: '';
-    width: 2px;
-    top: 0;
-    bottom: 0;
+    width: 3px;
+    top: 40px;
+    bottom: -75px;
     background-color: @red;
-    left: -20px;
+    left: -60px;
   }
   
   &::after {
     position: absolute;
     content: '';
-    width: 25px;
-    height: 25px;
+    width: 23px;
+    height: 23px;
     border: 2px solid @red;
     border-radius: 50%;
-    top: 0;
+    top: 15px;
    
-    left: -30px;
+    left: -72px;
   }
   
+}
+
+.process__item:nth-child(3) {
+
+  &::after {
+    
+    width: 22px;
+    height: 22px;
+    border: 3px solid @red;
+    top: 15px;
+    left: -72.5px;
+  }
+}
+
+.process__item:nth-child(4) {
+
+  &::after {
+    
+    width: 20px;
+    height: 20px;
+    border: 5px solid @red;
+    top: 15px;
+    left: -72.5px;
+  }
+}
+
+.process__item:last-child {
+  &::before {
+    display: none;
+  }
 }
 
 
@@ -57,7 +92,7 @@
     width: 0;
 	height: 0;
     left: -33px; 
-    top: 0;
+    top: -25px;
 	border-top: 10px solid transparent;
 	border-right: 16px solid #ffffff;
 	border-bottom: 10px solid transparent;
@@ -122,4 +157,10 @@
     height: @wedding-height;
     background-position: @wedding-offset-x @wedding-offset-y;
   }
+}
+
+.process__subtitle {
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
 }

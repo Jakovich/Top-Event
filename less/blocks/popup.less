@@ -1,24 +1,29 @@
 .popup {
-  
   display: none;
   position: fixed;
   top: 100px;
   width: 1170px;
   max-width: 90%;
-  
   padding: 50px 10px;
+  padding-bottom: 25px;
   left: 50%;
   margin-left: -585px;
   z-index: 105;
   background-color: #ffffff;
   &::after {
     content: '';
-    bottom: -50px;
+    bottom: -49px;
     position: absolute;
-    border-left: 585px solid transparent;
-    border-right: 585px solid transparent;
+    left: 0;
+    border-left: 591px solid transparent;
+    border-right: 591px solid transparent;
     border-top: 50px solid #ffffff;
   }
+}
+
+.popup__form {
+  margin: 0 auto;
+  width: 809px;
 }
 
 .popup__overlay {

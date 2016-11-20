@@ -1,15 +1,23 @@
 .describe {
-  background-image: url()
+  display: flex;
+  justify-content: center;
 }
+
 .describe__logo {
   background-color: @red;
   color: @text-light;
   text-align: left;
   font-family: 'Lobster', cursive;
   text-transform: uppercase;
-  padding: 20px 55px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 58px;
+  padding-right: 52px;
   width: 260px;
   position: relative;
+  top: -5px;
+  margin: 0 25px;
+  z-index:5;
   h1 {
     font-size: 20px;
     span {
@@ -21,26 +29,79 @@
   
   &::after {
     position: absolute;
-    bottom: -40px;
+    bottom: -36px;
     left: 0;
     content: '';
     width: 0;
 	height: 0;
 	border-left: 185px solid transparent;
 	border-right: 185px solid transparent;
-	border-top: 40px solid @red;
+	border-top: 36px solid @red;
   }
   
   
 }
 
+.describe__logo--bottom {
+  top: 0;
+  &::after {
+   
+    top: -36px;
+    border-top: none;
+	border-left: 185px solid transparent;
+	border-right: 185px solid transparent;
+	border-bottom: 36px solid @red;
+  }
+}
+
 .describe__contacts {
+  width: 360px;
+  padding-top: 10px;
+}
+.describe__info {
+  width: 360px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.describe__name {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.describe__exp {
+  margin-top: 15px;
+  color: @red;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
 }
 
 .describe__link {
   text-decoration: underline;
   color: #ffffff;
   font-size: 14px;
+  display: inline-block;
+  margin-right: 25px;
+  transition: @transition;
+  
+  &:hover {
+    color: @red;
+  }
+}
+
+.describe__link--red {
+  color: @red;
+  &:hover {
+    color: #ffffff;
+  }
+}
+
+.describe__phone {
+  margin: 15px 0;
+  font-size: 35px;
+  color: #ffffff;
 }
 
 .describe__btn {
@@ -50,7 +111,7 @@
   color: #ffffff;
   font-weight: bold;
   transition: @transition;
-  padding: 5px 20px;
+  padding: 8px 30px;
   border-radius: 20px;
   cursor: pointer;
   &:hover {

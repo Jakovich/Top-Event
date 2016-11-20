@@ -10,12 +10,44 @@ $(document).ready(function() {
       dayVisible: false
     });
   
-  $('.portfolio__item').find('a').colorbox({
+  $('.portfolio__photo').find('a').colorbox({
     'rel': 'gallery',
     'maxWidth': '90%',
     'transition': 'fade',
-    'current': '{current} отзыв из {total}'
+    'current': ''
   });
+  
+  //открытие попапа
+  
+  //окрытие попапа при нажатии на ссылку
+  var popup = $('.popup');
+  var popupOverlay = $('.popup__overlay');
+ 
+  $('.common-btn').click(function (evt) {
+    evt.preventDefault();
+    popup.fadeIn(500);
+    popupOverlay.fadeIn(500);
+  })
+  
+  //функция закрытия попапа
+  
+  function closePopup(elem, overlay) {
+    elem.fadeOut(500);
+    overlay.fadeOut(500);
+  }
+
+  //закрытие попапа при нажатии на крестик или по затемненному фону
+  
+  popupOverlay.click(function () {
+    closePopup(popup, popupOverlay);
+  })
+
+  //закрытие попапа при нажатии на клавишу esc  
+  $(this).keydown(function (eventObject) {
+    if (eventObject.which == 27)
+      closePopup(popup, popupOverlay);
+  });
+  
   
   //слайдер
    $('.slider__jcarousel').jcarousel({
@@ -53,7 +85,31 @@ $(document).ready(function() {
     }, function () {
       $(this).jcarouselAutoscroll('start');
     });
+  
+  
+  //маска на поля 
+$('#in').inputmask("a{2,20} [aa{2,20}]", {
+    "onincomplete": function () {
+      var $currentName = $('.call-master [name=name]').val();
+      if ($currentName === '') {
+        validName = 0;
+      } else {
+        validName = 1;
+      }
 
+    },
+
+    "oncomplete": function () {
+      validName = 2;
+      $(this).removeClass('call-master__input--invalid');
+      removeErr('input-name', 'call-master__errorMsg');
+    },
+    "onKeyValidation": function () {
+      removeErr('input-name', 'call-master__errorMsg');
+    },
+    "placeholder": " ",
+    "showMaskOnHover": false
+});
   
   
   
