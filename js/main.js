@@ -10,6 +10,13 @@ $(document).ready(function() {
       dayVisible: false
     });
   
+  $('.portfolio__item').find('a').colorbox({
+    'rel': 'gallery',
+    'maxWidth': '90%',
+    'transition': 'fade',
+    'current': '{current} отзыв из {total}'
+  });
+  
   //слайдер
    $('.slider__jcarousel').jcarousel({
       wrap: 'circular' // Прокрутка по кругу
@@ -42,9 +49,9 @@ $(document).ready(function() {
       });
 
     $('.slider__jcarousel').hover(function () {
-      $('.jcarousel').jcarouselAutoscroll('stop');
+      $(this).jcarouselAutoscroll('stop');
     }, function () {
-      $('.jcarousel').jcarouselAutoscroll('start');
+      $(this).jcarouselAutoscroll('start');
     });
 
   

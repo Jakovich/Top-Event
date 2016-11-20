@@ -1,0 +1,25 @@
+.paginator {
+  text-align: center;
+}
+
+.paginator__item {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  
+  font-size: 18px;
+  line-height: 28px;
+  color: @text-gray;
+  transition: @transition;
+  &:hover {
+    background-color: @red;
+    color: #ffffff;
+  }
+}
+
+.paginator__item--current {
+  background-color: @red;
+  color: #ffffff;
+}
