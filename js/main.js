@@ -88,29 +88,79 @@ $(document).ready(function() {
   
   
   //маска на поля 
-$('#in').inputmask("a{2,20} [aa{2,20}]", {
+  $('input[name=name]').inputmask("a{2,20} [aa{2,20}]", {
     "onincomplete": function () {
-      var $currentName = $('.call-master [name=name]').val();
-      if ($currentName === '') {
-        validName = 0;
-      } else {
-        validName = 1;
-      }
-
+      $(this).removeClass('input-completed');
+      
     },
-
+    
     "oncomplete": function () {
-      validName = 2;
-      $(this).removeClass('call-master__input--invalid');
-      removeErr('input-name', 'call-master__errorMsg');
+      
+      $(this).addClass('input-completed');
+      //removeErr('input-name', 'call-master__errorMsg');
     },
     "onKeyValidation": function () {
-      removeErr('input-name', 'call-master__errorMsg');
+      //removeErr('input-name', 'call-master__errorMsg');
     },
     "placeholder": " ",
     "showMaskOnHover": false
-});
+  });
   
+  $('input[name=phone]').inputmask("+7 (999) 999-9999", {
+    "onincomplete": function () {
+      $(this).removeClass('input-completed');
+
+    },
+    "oncomplete": function () {
+      $(this).addClass('input-completed');
+      
+    },
+    "onKeyValidation": function () {
+     
+    }
+  });
+  
+  $('input[name=email]').inputmask({
+    "alias": "email",
+    "onincomplete": function () {
+     $(this).removeClass('input-completed');
+    },
+    "oncomplete": function () {
+      $(this).addClass('input-completed');
+    }
+
+  })
+  
+  //проверка сохраненных значений
+  
+  function checkValid() {
+    $('input[name=name]').each(function() {
+      if (Inputmask.isValid($(this).val(), {
+        alias: "a{2,20} [aa{2,20}]"
+        })) {
+        $(this).addClass('input-completed');
+      };
+    });
+    
+    $('input[name=email]').each(function() {
+      if (Inputmask.isValid($(this).val(), {
+        alias: "email"
+        })) {
+        $(this).addClass('input-completed');
+      };
+    });
+    
+    $('input[name=phone]').each(function() {
+    if (Inputmask.isValid($(this).val(), {
+      alias: "+7 (999) 999-9999"
+      })) {
+    
+        $(this).addClass('input-completed');
+      };
+    });
+  }
+  
+  checkValid();
   
   
 })
