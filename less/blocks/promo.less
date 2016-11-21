@@ -38,10 +38,49 @@
   font-size: 35px;
 }
 
+.promo__timer {
+  margin: 0 auto;
+  width: 368px;
+  position: relative;
+  
+}
+
+
+.promo__arrow {
+  position: absolute;
+  color: @red;
+  font-size: 60px;
+  top: -10px;
+  &:first-child {
+    left: -50px;
+    
+    transform: rotate(6deg)
+  }
+  &:last-child {
+    right: -50px;
+  left: auto;
+  transform: rotate(-6deg)
+  }
+  
+}
+
+.promo__arrow--right {
+  
+}
+
 .promo__exp {
   font-size: 20px;
+  margin: 5px 0;
 }
 
 .promo__exp--semibold {
   font-weight: 600;
+}
+
+.promo__form-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 16px;
 }

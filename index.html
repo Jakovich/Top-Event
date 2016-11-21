@@ -59,20 +59,21 @@
       <section class="reasons">
 
         <h2 class="main-title">Что мы предлагаем нашим клиентам</h2>
-        <div class="slider">
+
+        <div class="slider slider--offer">
           <div class="slider__jcarousel-wrapper">
             <div class="slider__jcarousel">
               <ul class="slider__items">
                 <li class="slider__item">
                   <div class="offer">
-                    <img src="" alt="">
+                    <img src="img/reasons_1.jpg" alt="" width="1060" height="400">
                     <h2 class="offer__title">Организация свадеб под ключ</h2>
                     <p class="offer__text">Мы предоставляем полный комплекс свадебных услуг для проведения вашего торжества на самом высоком уровне.</p>
                   </div>
                 </li>
                 <li class="slider__item">
                   <div class="offer">
-                    <img src="" alt="">
+                    <img src="img/reasons_1.jpg" alt="" width="1060" height="400">
                     <h2 class="offer__title">Организация свадеб под ключ</h2>
                     <p class="offer__text">Мы предоставляем полный комплекс свадебных услуг для проведения вашего торжества на самом высоком уровне.</p>
                   </div>
@@ -166,7 +167,11 @@
       <section class="promo">
         <div class="promo__wrapper">
           <h2 class="main-title">Специальное предложение!</h2>
-          <div class="timer" id="promo-timer"></div>
+          <div class="promo__timer">
+            <div class="promo__arrow"><i class="fa fa-angle-double-right"></i></div>
+            <div class="timer" id="promo-timer"></div>
+            <div class="promo__arrow"><i class="fa fa-angle-double-left"></i></div>
+          </div>
           <div class="promo__content">
             <div class="promo__text">
               <div class="promo__title">Букет невесты в подарок!</div>
@@ -179,8 +184,12 @@
             <div class="promo__form">
               <h3 class="promo__form-title">Оставить заявку</h3>
               <form action="/" method="post" class="form form__promo" name="promo-form">
-                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-                <input class="form__input" type="text" name="email" placeholder="Ваш email">
+                <label>
+                  <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                </label>
+                <label>
+                  <input class="form__input" type="text" name="email" placeholder="Ваш email">
+                </label>
                 <button class="form__btn" type="submit">Отправить</button>
               </form>
             </div>
@@ -240,9 +249,15 @@
           <p class="questions__text">Свяжитесь с нами по телефону: <b>+7 948 38 54 342</b></p>
           <p class="questions__text">Или оставьте заявку и мы ва перезвоним в течении получаса!</p>
           <form action="/" method="post" class="form">
-            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-            <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+           <div class="form__row">
+            <label>
+              <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+            </label>
+            <label>
+              <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+            </label>
             <button class="form__btn" type="submit">Отправить</button>
+            </div>
           </form>
         </div>
       </section>
@@ -295,9 +310,15 @@
         <h2 class="main-title main-title--white">Подпишитесь на нас и узнавайте о новых акциях и мероприятиях</h2>
         <div class="subscribe__form">
           <form action="/" method="post" class="form form--subscribe" name="subcribe">
-            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-            <input class="form__input" type="text" name="email" placeholder="Ваш email">
+            <div class="form__row">
+             <label>
+              <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+            </label>
+            <label>
+              <input class="form__input" type="text" name="email" placeholder="Ваш email">
+            </label>
             <button class="form__btn" type="submit">Подписаться</button>
+            </div>
           </form>
         </div>
       </section>
@@ -354,10 +375,15 @@
           <div class="connect__form">
             <form action="/" method="post" class="form form--connect">
               <div class="form__row">
-                <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
-                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-
-                <input class="form__input" type="text" name="email" placeholder="Ваш email">
+                <label>
+                  <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+                </label>
+                <label>
+                  <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                </label>
+                <label>
+                  <input class="form__input" type="text" name="email" placeholder="Ваш email">
+                </label>
               </div>
               <button class="form__btn" type="submit">Заказать сейчас</button>
             </form>
@@ -450,13 +476,17 @@
 
       <section class="closing">
         <div class="closing__wrapper">
-          <h2 class="main-title main-title--white">Уже решились воспользоваться нашими услугами?</h2>
+          <h2 class="main-title main-title--white">Уже решились воспользоваться нашими&nbsp;услугами?</h2>
           <p class="closing__text">Заполните форму заявки и получите шикарный букет невесты в подарок, а мы вам перезвоним и уточним подробности</p>
           <div class="closing__form">
             <form action="/" method="post" class="form form--closing">
               <div class="form__row">
-                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-                <input class="form__input" type="text" name="phone" placeholder="Ваш телефон">
+                <label>
+                  <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+                </label>
+                <label>
+                  <input class="form__input" type="text" name="phone" placeholder="Ваш телефон">
+                </label>
               </div>
               <textarea class="form__textarea" name="message" cols="30" rows="4" placeholder="Особые пожелания"></textarea>
               <button class="form__btn" type="submit">Отправить заявку</button>
@@ -511,9 +541,12 @@
     <div class="popup__form">
       <form action="/" method="post" class="form form--popup">
         <div class="form__row">
-          <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-
-          <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+          <label>
+            <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+          </label>
+          <label>
+            <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+          </label>
         </div>
         <button class="form__btn" type="submit">Оставить заявку</button>
 

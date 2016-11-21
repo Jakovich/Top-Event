@@ -1,3 +1,9 @@
+.form {
+  label {
+    position: relative;
+  }
+}
+
 .form__input {
   border: 2px solid @red;
   border-radius: 10px;
@@ -5,7 +11,7 @@
   width: 406px;
   padding: 10px;
   color: @text-gray;
-  margin-right: 22px;
+  //margin-right: 22px;
 }
 
 .form__textarea {
@@ -35,7 +41,7 @@
   cursor: pointer;
   transition: @transition;
     &:hover {
-      box-shadow: inset 0 -2px 3px rgba(0,0,0,0.5);
+    box-shadow: inset 0px -4px 8px 0px rgba(0, 0, 0, 0.5);
     }
   }
 
@@ -50,6 +56,10 @@
     font-size: 18px;
     width: 320px;
     text-align: center;
+    display: block;
+    
+  }
+  label {
     display: block;
     margin-bottom: 13px;
   }
@@ -106,3 +116,15 @@
     padding: 12px 65px;
   }
 }
+
+.form__errorMsg {
+  color: red;
+  font-size: 11px;
+  position: relative;
+  bottom: -10px;
+  display: block;
+  position: absolute;
+  width: 150px;
+  text-align: left;
+}
+

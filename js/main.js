@@ -97,10 +97,10 @@ $(document).ready(function() {
     "oncomplete": function () {
       
       $(this).addClass('input-completed');
-      //removeErr('input-name', 'call-master__errorMsg');
+      
     },
     "onKeyValidation": function () {
-      //removeErr('input-name', 'call-master__errorMsg');
+      hideErrMsg($(this));
     },
     "placeholder": " ",
     "showMaskOnHover": false
@@ -116,7 +116,7 @@ $(document).ready(function() {
       
     },
     "onKeyValidation": function () {
-     
+     hideErrMsg($(this));
     }
   });
   
@@ -127,6 +127,9 @@ $(document).ready(function() {
     },
     "oncomplete": function () {
       $(this).addClass('input-completed');
+    },
+    "onKeyValidation": function () {
+     hideErrMsg($(this));
     }
 
   })
@@ -162,5 +165,50 @@ $(document).ready(function() {
   
   checkValid();
   
+  //запрет отправки сообщения
+  
+  function formValid(elem) {
+    var submitBtn = $(elem).find('.form__btn');
+    var inputs = $(elem).find('input');
+    submitBtn.click(function(evt) {
+      inputs.each(function() {
+        if (!($(this).hasClass('input-completed'))) {
+          evt.preventDefault();
+        showErrMsg($(this), 'Заполните данное поле', 'form__errorMsg') 
+
+        }
+      })
+    })
+  }
+  
+  $('.form').each(function() {
+    formValid(this);
+  })
+  /*
+  функция добавления сообщения об ошибки
+  */
+  function showErrMsg(element, msg, className) {
+    
+    if (!(element.siblings().is('.form__errorMsg'))) {
+      var errMsg = $("<span/>", {
+        "class": className,
+        "html": msg
+      });
+
+      errMsg.appendTo(element.parent());
+      errMsg.fadeIn(500);
+    }
+  }
+  /*
+  функция удаления сообщения об ошибки
+  */
+  function hideErrMsg(elem) {
+    
+    if (elem.siblings().is('.form__errorMsg')) {
+      elem.parent().find('.form__errorMsg').fadeOut(400, function() {
+        elem.parent().find('.form__errorMsg').remove();
+      });
+    }
+  }
   
 })

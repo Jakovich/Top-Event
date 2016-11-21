@@ -8,7 +8,9 @@
 .slider--feddback {
   
   width: 430px;
-  
+  .slider__item {
+    padding-top: 15px;
+  }
   .slider__item {
     width: 430px;
   }
@@ -19,6 +21,35 @@
 
   .slider__next {
     right: -295px;
+  }
+}
+
+.slider--offer {
+  width: 1060px;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1060px;
+    height: 343px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 -32px 64px rgba(0,0,0,0.3);  
+    z-index: 5;
+    
+  }
+  padding: 0;
+  
+  .slider__item {
+    width: 1060px;
+  }
+  
+  .slider__prev {
+    left: -25px;
+  }
+
+  .slider__next {
+    right: -25px;
   }
 }
 
@@ -47,7 +78,7 @@
 }
 
 .slider__item {
-  padding-top: 15px;
+  //padding-top: 15px;
   float: left;
   width: 965px;
   
@@ -69,6 +100,7 @@
   font-size: 25px;
   text-align: center;
   line-height: 55px;
+  z-index:10;
 }
 
 .slider__prev:hover span,
