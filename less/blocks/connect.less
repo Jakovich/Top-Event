@@ -1,5 +1,20 @@
 .connect {
   background-color: #5b483c;
+  background-image: url('../img/connect-bg-big.jpg');
+  background-position: top center;
+  padding: 5px 0;
+  padding-top: 120px;
+  position: relative;
+   &::after {
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 97px;
+    left: -30px;
+    top: -40px;
+    //transform: rotate(-30deg);
+    background-image: url('../img/inkle.png')
+  }
 }
 
 .connect__wrapper {

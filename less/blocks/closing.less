@@ -1,5 +1,18 @@
 .closing {
   background-color: #5a4755;
+  background-image: url('../img/closing-bg-big.jpg');
+  background-position: bottom center;
+  position: relative;
+   &::after {
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 97px;
+    right: -30px;
+    top: -40px;
+    transform: rotate(-30deg);
+    background-image: url('../img/inkle.png')
+  }
 }
 
 .closing__wrapper {

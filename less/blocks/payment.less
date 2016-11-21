@@ -1,6 +1,32 @@
 .payment {
   background-color: #33262f;
+  padding-top: 110px;
+  background-image: url('../img/payment-bg-big.jpg');
+  background-position: top center;
   text-align: center;
+  position: relative;
+   &::after {
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 97px;
+    right: -30px;
+    top: -40px;
+    transform: rotate(-30deg);
+    background-image: url('../img/inkle.png')
+  }
+  
+  &::before {
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 97px;
+    left: -30px;
+    top: -40px;
+    transform: rotate(-30deg);
+    background-image: url('../img/inkle.png')
+  }
+  
 }
 
 .payment__wrapper {

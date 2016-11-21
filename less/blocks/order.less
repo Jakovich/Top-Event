@@ -1,5 +1,20 @@
 .order {
   background-color: #2f3e4b;
+  background-image: url('../img/order-bg-big.jpg');
+  background-position: top center;
+  padding: 5px 0;
+  padding-top: 120px;
+  position: relative;
+   &::after {
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 97px;
+    right: -30px;
+    top: -40px;
+    transform: rotate(-30deg);
+    background-image: url('../img/inkle.png')
+  }
 }
 
 .order__text {
