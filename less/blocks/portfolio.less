@@ -39,6 +39,10 @@
 }
 
 .portfolio__photo {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
   position: relative;
   overflow: hidden;
   &:hover {
@@ -52,6 +56,22 @@
     }
   }
 }
+
+.portfolio__photo--big {
+  width: 572px;
+  height: 298px;
+}
+
+.portfolio__photo--small {
+  width: 275px;
+  height: 298px;
+}
+
+.portfolio__photo--medium {
+  width: 467px;
+  height: 298px;
+}
+
 .portfolio__row {
   display: flex;
   justify-content: space-between;
@@ -90,6 +110,7 @@
     width: 63px;
     height: 53px;
     background-image: url('../img/quotes.png');
+    background-repeat: no-repeat;
     top: 0;
     left: 0;
   }
@@ -97,10 +118,13 @@
 
 .portfolio__text {
   padding-right: 80px;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .portfolio__signature {
   font-weight: 700;
+  font-size: 20px;
 }
 
 .portfolio__link {
@@ -110,4 +134,47 @@
   &:hover {
     color: @text-gray;
   }
+}
+
+@media (max-width: 1260px) {
+  
+  .portfolio__photo--big {
+    width: 434px;
+    height: 226px;
+  }
+
+  .portfolio__photo--small {
+    width: 209px;
+    height: 226px;
+  }
+  
+  .portfolio__photo--medium {
+    width: 434px;
+    height: 226px;
+  }
+  
+  .portfolio__wrapper {
+    max-width: 892px;
+  }
+  
+  .portfolio__quote {
+    width: 416px;
+    padding-top: 15px;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 38px;
+      height: 32px;
+      background-image: url('../img/quotes.png');
+      background-size: contain;
+      top: -10px;
+      left: -10px;
+    }
+  }
+  
+  .portfolio__text {
+    padding-right: 5px;
+    font-size: 16px;
+  }
+  
 }

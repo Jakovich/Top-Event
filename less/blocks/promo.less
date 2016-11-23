@@ -11,9 +11,9 @@
     content: '';
     width: 210px;
     height: 97px;
-    right: -30px;
+    right: 0;
     bottom: 40px;
-    transform: rotate(-30deg);
+    
     background-image: url('../img/inkle.png')
   }
 }
@@ -91,6 +91,7 @@
 
 .promo__exp--semibold {
   font-weight: 600;
+  margin-top: 10px;
 }
 
 .promo__form-title {
@@ -99,4 +100,44 @@
   font-weight: 700;
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+@media (max-width: 1260px) {
+  .promo {
+    background-image: url('../img/promo-bg-sm.jpg');
+    padding-bottom: 80px;
+  }
+  
+  .promo__img {
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    width: 200px;
+    height: 200px;
+    margin-top: -55px;
+    
+  }
+  
+  
+  
+  .promo__text {
+    width: 360px;
+  }
+  .promo__form {
+    width: 360px;
+    margin-top: -30px;
+  }
+  .promo__form-title {
+    font-size: 18px;
+    padding-left: 70px;
+  }
+  
+  
+  
+  .promo__title {
+    font-size: 24px;
+  }
+  
+  .promo__exp {
+    font-size: 16px;
+  }
 }

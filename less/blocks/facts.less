@@ -58,3 +58,34 @@
     border-top: 80px solid @red;
   }
 }
+
+@media (max-width: 1260px) {
+  
+  .facts-wrapper {
+    max-width: 960px;
+  }
+
+  .facts__name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .facts__number {
+    font-size: 30px;
+    line-height: 35px;
+    width: 200px;
+    padding-top: 15px;
+    height: 70px;
+    &::after {
+      bottom: -60px;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-top: 60px solid @red;
+    }
+  }
+  
+  .facts__item {
+    width: 200px;
+   
+  }
+}

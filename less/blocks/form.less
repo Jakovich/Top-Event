@@ -11,7 +11,7 @@
   width: 406px;
   padding: 10px;
   color: @text-gray;
-  //margin-right: 22px;
+  
 }
 
 .form__textarea {
@@ -109,6 +109,9 @@
     width: 356px;
     margin-right: 0;
   }
+  label {
+    width: 356px;
+  }
   .form__btn {
     margin: 0 auto;
     display: block;
@@ -128,3 +131,51 @@
   text-align: left;
 }
 
+@media (max-width: 1260px) {
+  .form__row {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    width: 426px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+  .form__promo {
+    .form__input {
+      font-size: 14px;
+      width: 270px;
+      text-align: left;
+      display: block;
+      
+    }
+    label {
+      display: block;
+      margin-bottom: 13px;
+    }
+    .form__btn {
+      font-size: 18px;
+      padding: 12px 27px;
+    }
+  }
+  
+  .form--subscribe {
+    label {
+      width: 370px;
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  
+  .form--closing {
+    .form__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+  }
+}

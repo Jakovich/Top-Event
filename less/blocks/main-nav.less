@@ -25,9 +25,24 @@
 .main-nav__item {
   a {
     color: #ffffff;
+    font-size: 18px;
     transition: @transition;
     &:hover {
       opacity: 0.8;
     }
   }
+}
+
+@media (max-width: 1260px) {
+  .main-nav__wrapper {
+    margin: 0 auto;
+    max-width: 880px;
+  }
+  
+  .main-nav__item {
+    a {
+      font-size: 14px;
+    }
+  }
+  
 }

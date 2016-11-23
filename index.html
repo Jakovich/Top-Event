@@ -20,13 +20,13 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__items">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">О нас</a></li>
-            <li class="main-nav__item"><a href="#">Что мы делаем</a></li>
-            <li class="main-nav__item"><a href="#">Как мы работает</a></li>
-            <li class="main-nav__item"><a href="#">Портфолио</a></li>
-            <li class="main-nav__item"><a href="#">Команда</a></li>
-            <li class="main-nav__item"><a href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a href="#intro">Главная</a></li>
+            <li class="main-nav__item"><a href="#about">О нас</a></li>
+            <li class="main-nav__item"><a href="#actions">Что мы делаем</a></li>
+            <li class="main-nav__item"><a href="#process">Как мы работает</a></li>
+            <li class="main-nav__item"><a href="#portfolio">Портфолио</a></li>
+            <li class="main-nav__item"><a href="#team">Команда</a></li>
+            <li class="main-nav__item"><a href="#feedbacks">Отзывы</a></li>
           </ul>
         </div>
       </nav>
@@ -34,12 +34,13 @@
     </header>
 
     <main>
-      <section class="intro">
+      <section class="intro" id="intro">
         <div class="intro__wrapper">
           <div class="describe">
             <div class="describe__info">
               <h2 class="describe__name">Свадебная организация</h2>
-              <div class="describe__exp">Организация свадеб &#171;под&nbsp;ключ&#187;</div>
+              <div class="describe__exp">Организация свадеб
+                <br>&#171;под&nbsp;ключ&#187;</div>
             </div>
             <div class="describe__logo">
               <h1>Свадебное агенство
@@ -47,7 +48,6 @@
             </h1>
             </div>
             <div class="describe__contacts">
-              <a class="describe__link" href="#">Обратный звонок</a>
               <a class="describe__link" href="#">email.example.com</a>
               <div class="describe__phone">+7 837 546 28</div>
               <button class="common-btn common-btn--describe">Оставить заявку</button>
@@ -128,7 +128,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__wrapper">
           <h2 class="main-title main-title--white">Коротко о нашем агенстве</h2>
           <h1 class="about__title">TOP-EVENT</h1>
@@ -197,7 +197,7 @@
         </div>
       </section>
 
-      <section class="actions">
+      <section class="actions" id="actions">
         <div class="actions__wrapper">
           <h2 class="main-title main-title--bottom">Что мы делаем:</h2>
           <div class="actions__text">
@@ -249,14 +249,14 @@
           <p class="questions__text">Свяжитесь с нами по телефону: <b>+7 948 38 54 342</b></p>
           <p class="questions__text">Или оставьте заявку и мы ва перезвоним в течении получаса!</p>
           <form action="/" method="post" class="form">
-           <div class="form__row">
-            <label>
-              <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-            </label>
-            <label>
-              <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
-            </label>
-            <button class="form__btn" type="submit">Отправить</button>
+            <div class="form__row">
+              <label>
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input class="form__input" type="text" name="phone" placeholder="Ваше телефон">
+              </label>
+              <button class="form__btn" type="submit">Отправить</button>
             </div>
           </form>
         </div>
@@ -264,14 +264,14 @@
 
       <section class="time">
         <div class="time__wrapper">
-          <h2 class="main-title main-title--white">Почему стоит начинать планоировать торжество зараннее?</h2>
+          <h2 class="main-title main-title--white main-title--margsm">Почему стоит начинать планоировать торжество зараннее?</h2>
           <p class="time__text">У лучших фотографов и операторов, ресторанов, популярных ведущих, звезд эстрады и артистов график расписан на несколько месяцев вперед, а в некоторых случаях может достигать и полугода.</p>
           <p class="time__text">Поэтому, если у вас есть особые пожелания по организации торжества, необходимо подумать об этом заранее, чтобы не выбирать «из того, что останется».</p>
           <button class="common-btn" data-role="modal">Заказать сейчас</button>
         </div>
       </section>
 
-      <section class="process">
+      <section class="process" id="process">
         <div class="process__wrapper">
           <h2 class="main-title main-title--bottom">Как мы работаем</h2>
 
@@ -311,19 +311,19 @@
         <div class="subscribe__form">
           <form action="/" method="post" class="form form--subscribe" name="subcribe">
             <div class="form__row">
-             <label>
-              <input class="form__input" type="text" name="name" placeholder="Ваше имя">
-            </label>
-            <label>
-              <input class="form__input" type="text" name="email" placeholder="Ваш email">
-            </label>
-            <button class="form__btn" type="submit">Подписаться</button>
+              <label>
+                <input class="form__input" type="text" name="name" placeholder="Ваше имя">
+              </label>
+              <label>
+                <input class="form__input" type="text" name="email" placeholder="Ваш email">
+              </label>
+              <button class="form__btn" type="submit">Подписаться</button>
             </div>
           </form>
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="portfolio__wrapper">
           <h2 class="main-title main-title--bottom">Свадьбы, которые мы организовали:</h2>
           <div class="portfolio__item">
@@ -391,17 +391,21 @@
         </div>
       </section>
 
-      <section class="team">
+      <section class="team" id="team">
         <h2 class="main-title main-title--bottom">Команда Top-Event</h2>
-        <div class="slider">
+        <div class="slider slider--team">
           <div class="slider__jcarousel-wrapper">
             <div class="slider__jcarousel">
               <ul class="slider__items">
                 <li class="slider__item">
                   <div class="team-item">
-                    <img class="team-item__img" src="img/team_1.jpg" alt="Алексеев" width="470" height="270">
+                    <div class="team-item__img team-item__img--left">
+                      <img src="img/team_1.jpg" alt="Алексеев" width="470" height="270">
+                    </div>
                     <div class="team-item__info">
-                      <img class="team-item__profile" src="img/team_2.jpg" alt="Алексеев" width="170" height="230">
+                      <div class="team-item__img team-item__img--right">
+                        <img src="img/team_2.jpg" alt="Алексеев" width="170" height="230">
+                      </div>
                       <div class="team-item__text">
                         <p class="team-item__name">Алексей Алексеев</p>
                         <p class="team-item__position">Ведущий</p>
@@ -412,9 +416,13 @@
                 </li>
                 <li class="slider__item">
                   <div class="team-item">
-                    <img class="team-item__img" src="img/team_1.jpg" alt="Алексеев" width="470" height="270">
+                    <div class="team-item__img team-item__img--left">
+                      <img src="img/team_1.jpg" alt="Алексеев" width="470" height="270">
+                    </div>
                     <div class="team-item__info">
-                      <img class="team-item__profile" src="img/team_2.jpg" alt="Алексеев" width="170" height="230">
+                      <div class="team-item__img team-item__img--right">
+                        <img src="img/team_2.jpg" alt="Алексеев" width="170" height="230">
+                      </div>
                       <div class="team-item__text">
                         <p class="team-item__name">Василий Захаров</p>
                         <p class="team-item__position">Не Ведущий</p>
@@ -442,7 +450,7 @@
         <button class="common-btn" data-role="modal">Заказать сейчас</button>
       </section>
 
-      <section class="feedbacks">
+      <section class="feedbacks" id="feedbacks">
         <h2 class="main-title">Отзывы наших клиентов</h2>
         <div class="feedbacks__slider">
           <div class="slider slider--feddback">
@@ -496,7 +504,8 @@
         <div class="describe">
           <div class="describe__info">
             <h2 class="describe__name">Свадебная организация</h2>
-            <div class="describe__exp">Организация свадеб &#171;под ключ&#187;</div>
+            <div class="describe__exp">Организация свадеб
+              <br>&#171;под&nbsp;ключ&#187;</div>
           </div>
           <div class="describe__logo describe__logo--bottom">
             <h1>Свадебное агенство
@@ -506,7 +515,6 @@
           <div class="describe__contacts">
             <div class="describe__phone">+7 837 546 28</div>
 
-            <a class="describe__link describe__link--red" href="#">Обратный звонок</a>
             <a class="describe__link describe__link--red" href="#">email.example.com</a>
           </div>
         </div>
@@ -554,7 +562,9 @@
     </div>
   </div>
   <div class="popup__overlay"></div>
-
+  <div class="up-btn" id="up-btn">
+    <i class="fa fa-arrow-up"></i>
+  </div>
   <script src="js/main.js"></script>
 </body>
 

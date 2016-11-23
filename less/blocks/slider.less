@@ -78,7 +78,7 @@
 }
 
 .slider__item {
-  //padding-top: 15px;
+  
   float: left;
   width: 965px;
   
@@ -121,5 +121,80 @@
 
 .slider__next {
   right: -100px;
+}
+
+@media (max-width: 1260px) {
+  
+  
+  .slider--team {
+    width: 850px;
+  
+    .slider__item {
+      width: 850px;
+    }
+    
+    .slider__prev {
+      left: -60px;
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 20px;
+    }
+  
+    .slider__next {
+      right: -60px;
+       width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 20px;
+    }
+  }
+  
+  .slider--feddback {
+    width: 430px;
+  .slider__item {
+    width: 430px;
+  }
+  
+  .slider__prev {
+    left: -235px;
+  }
+
+  .slider__next {
+    right: -235px;
+  }
+  }
+  
+  .slider--offer {
+    width: 1024px;
+   
+    img {
+      max-width: 100%;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1024px;
+      height: 343px;
+      top: 0;
+      left: 0;
+      box-shadow: 0 -32px 64px rgba(0,0,0,0.3);  
+      z-index: 5;
+      
+    }
+    padding: 0;
+  
+    .slider__item {
+      width: 1024px;
+    }
+    
+    .slider__prev {
+      left: 17px;
+    }
+  
+    .slider__next {
+      right: 17px;
+    }
+  }
 }
 

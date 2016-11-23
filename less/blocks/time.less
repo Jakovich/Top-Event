@@ -11,9 +11,8 @@
     content: '';
     width: 210px;
     height: 97px;
-    left: -30px;
+    left: 0;
     bottom: 40px;
-    transform: rotate(-30deg);
     background-image: url('../img/inkle.png')
   }
 }
@@ -27,6 +26,21 @@
   text-align: center;
   color: @text-light;
   font-size: 18px;
+  line-height: 27px;
   max-width: 890px;
-  margin: 15px auto;
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+@media (max-width: 1260px) {
+  .time__text {
+    font-size: 16px;
+  }
+  
+  .time {
+    .main-title {
+      font-size: 25px;
+      
+    }
+  }
 }

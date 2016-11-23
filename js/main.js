@@ -211,4 +211,31 @@ $(document).ready(function() {
     }
   }
   
+  
+  //плавный скроллинг к разделам
+  
+  $('.main-nav__item a[href^="#"]').click(function () { 
+     var elementClick = $(this).attr("href");
+     var destination = $(elementClick).offset().top - 80;
+     if($.browser.safari){
+       $('body').animate( { scrollTop: destination }, 1100 );
+     }else{
+       $('html').animate( { scrollTop: destination }, 1100 );
+     }
+     return false;
+   });
+  
+  //кнопка скролла вверх
+  jQuery(function(f){
+    var element = f('#up-btn');
+	 f(window).scroll(function(){
+	   element['fade'+ (f(this).scrollTop() > 1000 ? 'In': 'Out')](500);          
+     });
+  });
+  
+  $('#up-btn').click( function() {
+    $("body,html").animate({scrollTop:0},800);
+  })
+  
+  
 })
