@@ -20,6 +20,7 @@
   margin-bottom: 60px;
   border-radius: 10px;
   position: relative;
+  transition: @transition;
   &::before {
     position: absolute;
     content: '';
@@ -31,6 +32,7 @@
   }
   
   &::after {
+    transition: @transition;
     position: absolute;
     content: '';
     width: 23px;
@@ -40,6 +42,13 @@
     top: 15px;
    
     left: -72px;
+  }
+  
+  &:hover {
+     &::after {
+       background-color: @red;
+    }
+    
   }
   
 }
@@ -86,10 +95,13 @@
 }
 
 .process__exp {
+  
   padding-right: 90px;
   font-size: 20px;
   margin: 13px 0;
   position: relative;
+  transition: @transition;
+
   &::before {
     position: absolute;
     content: '';

@@ -32,8 +32,8 @@
   background-color: @red;
   border-radius: 10px;
   border: none;
-  padding: 12px 30px;
-  
+  padding: 9px 27px;
+  border: 3px solid @red;
   
   font-weight: 700;
   font-size: 16px;
@@ -41,9 +41,10 @@
   cursor: pointer;
   transition: @transition;
     &:hover {
-    box-shadow: inset 0px -4px 8px 0px rgba(0, 0, 0, 0.5);
-    }
+    color: @red;
+    background-color: #ffffff;    
   }
+}
 
 .form__row {
   display: flex;
@@ -110,7 +111,7 @@
     margin-right: 0;
   }
   label {
-    width: 356px;
+    width: 376px;
   }
   .form__btn {
     margin: 0 auto;
@@ -176,6 +177,22 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 0;
+    }
+  }
+  
+  .form--popup {
+    .form__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+    .form__input {
+      width: 300px;
+      margin-right: 0;
+      font-size: 18px;
+    }
+    label {
+      width: 300px;
     }
   }
 }

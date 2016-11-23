@@ -18,35 +18,54 @@ $(document).ready(function() {
   });
   
   //открытие попапа
-  
   //окрытие попапа при нажатии на ссылку
   var popup = $('.popup');
   var popupOverlay = $('.popup__overlay');
- 
+  var popupConfirm = $('.popup-confirm');
+  var popupConfirmOverlay = $('.popup-confirm__overlay');
   $('.common-btn').click(function (evt) {
     evt.preventDefault();
     popup.fadeIn(500);
     popupOverlay.fadeIn(500);
   })
   
+  
+  
+
+  //закрытие попапа при нажатии на крестик или по затемненному фону
+  popupOverlay.click(function () {
+    openConfirm();
+  })
+  
+  
+
+  //закрытие попапа при нажатии на клавишу esc  
+  $(this).keydown(function (eventObject) {
+    if (eventObject.which == 27)
+      openConfirm();
+  });
+  
+  $('#confirm-yes').click(function(){
+    closePopup(popup, popupOverlay);
+    closePopup(popupConfirm, popupConfirmOverlay);
+  });
+  
+  $('#confirm-no').click(function(){
+    closePopup(popupConfirm, popupConfirmOverlay);
+  });
+  
   //функция закрытия попапа
+  
+  function openConfirm() {
+    popupConfirm.fadeIn(500);
+    popupConfirmOverlay.fadeIn(500);
+  }
   
   function closePopup(elem, overlay) {
     elem.fadeOut(500);
     overlay.fadeOut(500);
   }
-
-  //закрытие попапа при нажатии на крестик или по затемненному фону
   
-  popupOverlay.click(function () {
-    closePopup(popup, popupOverlay);
-  })
-
-  //закрытие попапа при нажатии на клавишу esc  
-  $(this).keydown(function (eventObject) {
-    if (eventObject.which == 27)
-      closePopup(popup, popupOverlay);
-  });
   
   
   //слайдер
