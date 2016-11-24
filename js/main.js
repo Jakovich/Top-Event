@@ -256,5 +256,21 @@ $(document).ready(function() {
     $("body,html").animate({scrollTop:0},800);
   })
   
+  //показ страниц  портфолио
+  
+  $('.portfolio .paginator__item').click(function(evt) {
+    evt.preventDefault();
+   
+    var currentItem = $('[data-tabcontent="' + this.dataset.tablink + '"]');
+    var allItems = $('[data-tabcontent]');
+    
+    allItems.each(function() {
+      $(this).hide()
+    });
+    $('.portfolio .paginator__item').removeClass('paginator__item--current');
+    $(this).addClass('paginator__item--current');
+    currentItem.show()
+  })
+  
   
 })

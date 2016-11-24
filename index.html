@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Top-event | Свадебное агентство</title>
-  <link href="https://fonts.googleapis.com/css?family=Lobster|Raleway:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
   <script type="text/javascript" src="vendor/jquery/jquery.1.7.2.js"></script>
   <script type="text/javascript" src="vendor/syotimer/jquery.syotimer.min.js"></script>
@@ -238,7 +238,7 @@
           <p class="payment__text">Мы предоставляем вам персонального менеджера, который разработает свадьбу вашей мечты, возьмет на себя все организационные моменты и решит любые возникающие сложности.</p>
           <p class="payment__text">Наше агентство поможет вам рационально использовать средства, выделенные на организацию торжества.</p>
           <p class="payment__text">Мы вместе расставим приоритеты в распределении средств, чтобы ни один рубль не был потрачен впустую.</p>
-          <p class="payment__subtitle">Средний бюджет наших свадеб составляет до 1 500 000 рублей</p>
+          <p class="payment__subtitle">Ведем свадьбы с любым бюджетом</p>
         </div>
       </section>
 
@@ -326,41 +326,128 @@
       <section class="portfolio" id="portfolio">
         <div class="portfolio__wrapper">
           <h2 class="portfolio__title">Свадьбы, которые мы организовали:</h2>
-          <div class="portfolio__item">
+          <div class="portfolio__item"  data-tabcontent="item1">
             <h3 class="portfolio__name">Алексей и Ольга</h3>
             <div class="portfolio__row">
               <div class="portfolio__photo portfolio__photo--big">
-                <img src="img/portfolio_big.jpg" alt="" width="572" height="298">
-                <a href="img/portfolio_big/portfolio_1.jpg" class="portfolio__show-btn">+</a>
+                <img src="img/portfolio/item1/portfolio_big.jpg" alt="" width="572" height="298">
+                <a href="img/portfolio_big/item1/portfolio_1.jpg" class="portfolio__show-btn">+</a>
               </div>
               <div class="portfolio__photo portfolio__photo--small">
-                <img src="img/portfolio_small1.jpg" width="275" height="298" alt="">
-                <a href="img/portfolio_big/portfolio_2.jpg" class="portfolio__show-btn">+</a>
+                <img src="img/portfolio/item1/portfolio_small1.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_2.jpg" class="portfolio__show-btn">+</a>
               </div>
               <div class="portfolio__photo portfolio__photo--small">
-                <img src="img/portfolio_small2.jpg" width="275" height="298" alt="">
-                <a href="img/portfolio_big/portfolio_3.jpg" class="portfolio__show-btn">+</a>
+                <img src="img/portfolio/item1/portfolio_small2.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_3.jpg" class="portfolio__show-btn">+</a>
               </div>
             </div>
             <div class="portfolio__row">
               <div class="portfolio__photo portfolio__photo--medium">
-                <img src="img/portfolio_medium.jpg" width="467" height="298" alt="">
-                <a href="img/portfolio_big/portfolio_4.jpg" class="portfolio__show-btn">+</a>
+                <img src="img/portfolio/item1/portfolio_medium.jpg" width="467" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_4.jpg" class="portfolio__show-btn">+</a>
               </div>
               <div class="portfolio__quote">
                 <p class="portfolio__text">Отличное агентство. Боялись, что отдадим залог, а нас обманут, или чего другого. Но договор, который мы составили на месте, меня порадовал. Все было узаконено».</p>
                 <p class="portfolio__signature">Алексей</p>
 
-                <a href="#" class="portfolio__link" href="#">Посмотреть подробнее</a>
+                <a href="#" class="portfolio__link">Посмотреть подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item portfolio__item--hidden" data-tabcontent="item2">
+            <h3 class="portfolio__name">Михаил и Анна</h3>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--big">
+                <img src="img/portfolio/item1/portfolio_big.jpg" alt="" width="572" height="298">
+                <a href="img/portfolio_big/item1/portfolio_1.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio/item1/portfolio_small1.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_2.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio/item1/portfolio_small2.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_3.jpg" class="portfolio__show-btn">+</a>
+              </div>
+            </div>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--medium">
+                <img src="img/portfolio/item1/portfolio_medium.jpg" width="467" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_4.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__quote">
+                <p class="portfolio__text">Отличное агентство. Боялись, что отдадим залог, а нас обманут, или чего другого. Но договор, который мы составили на месте, меня порадовал. Все было узаконено».</p>
+                <p class="portfolio__signature">Михаил</p>
+
+                <a href="#" class="portfolio__link">Посмотреть подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item portfolio__item--hidden" data-tabcontent="item3">
+            <h3 class="portfolio__name">Иван и Катя</h3>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--big">
+                <img src="img/portfolio/item1/portfolio_big.jpg" alt="" width="572" height="298">
+                <a href="img/portfolio_big/item1/portfolio_1.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio/item1/portfolio_small1.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_2.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio/item1/portfolio_small2.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_3.jpg" class="portfolio__show-btn">+</a>
+              </div>
+            </div>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--medium">
+                <img src="img/portfolio/item1/portfolio_medium.jpg" width="467" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_4.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__quote">
+                <p class="portfolio__text">Отличное агентство. Боялись, что отдадим залог, а нас обманут, или чего другого. Но договор, который мы составили на месте, меня порадовал. Все было узаконено».</p>
+                <p class="portfolio__signature">Иван</p>
+
+                <a href="#" class="portfolio__link">Посмотреть подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__item portfolio__item--hidden" data-tabcontent="item4">
+            <h3 class="portfolio__name">Геннадий и Ольга</h3>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--big">
+                <img src="img/portfolio/item1/portfolio_big.jpg" alt="" width="572" height="298">
+                <a href="img/portfolio_big/item1/portfolio_1.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio/item1/portfolio_small1.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_2.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__photo portfolio__photo--small">
+                <img src="img/portfolio/item1/portfolio_small2.jpg" width="275" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_3.jpg" class="portfolio__show-btn">+</a>
+              </div>
+            </div>
+            <div class="portfolio__row">
+              <div class="portfolio__photo portfolio__photo--medium">
+                <img src="img/portfolio/item1/portfolio_medium.jpg" width="467" height="298" alt="">
+                <a href="img/portfolio_big/item1/portfolio_4.jpg" class="portfolio__show-btn">+</a>
+              </div>
+              <div class="portfolio__quote">
+                <p class="portfolio__text">Отличное агентство. Боялись, что отдадим залог, а нас обманут, или чего другого. Но договор, который мы составили на месте, меня порадовал. Все было узаконено».</p>
+                <p class="portfolio__signature">Геннадий</p>
+
+                <a href="#" class="portfolio__link">Посмотреть подробнее</a>
               </div>
             </div>
           </div>
           <div class="paginator">
 
-            <a href="#" class="paginator__item paginator__item--current">1</a>
-            <a href="#" class="paginator__item">2</a>
-            <a href="#" class="paginator__item">3</a>
-            <a href="#" class="paginator__item">4</a>
+            <a href="#" data-tablink="item1" class="paginator__item paginator__item--current">1</a>
+            <a href="#" data-tablink="item2" class="paginator__item">2</a>
+            <a href="#" data-tablink="item3" class="paginator__item">3</a>
+            <a href="#" data-tablink="item4" class="paginator__item">4</a>
 
           </div>
         </div>
