@@ -51,7 +51,7 @@ gulp.task("minJs", function(){
   .pipe(gulp.dest("build/js/"))
   .pipe(uglify())
   .pipe(rename("main.min.js"))
-  .pipe(gulp.dest("build/scripts/"))
+  .pipe(gulp.dest("build/js/"))
   
 });
 

@@ -1,11 +1,14 @@
-.bottom-gradient ()  {
-  &:after {
-    content: "";
+.bottom-shape ()  {
+  position: relative;
+  &::after {
     position: absolute;
-    height: 6px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: @gradient;
+    content: '';
+    height: 28px;
+    width: 618px;
+    left: 50%;
+    margin-left: -309px;
+    background-image: url('../img/bottom-shape.png');
+    bottom: -40px;
+    
   }
 }
