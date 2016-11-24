@@ -269,7 +269,27 @@ $(document).ready(function() {
     });
     $('.portfolio .paginator__item').removeClass('paginator__item--current');
     $(this).addClass('paginator__item--current');
-    currentItem.show()
+    if (currentItem.hasClass('portfolio__item--hidden')) {
+        
+        
+      var currentPhoto = currentItem.find('[data-src]');
+      currentPhoto.each(function() {
+        console.log($(this))
+        var src = $(this).attr("data-src");
+        var width = $(this).attr("data-width");
+        //создается новый объект img
+        var img = new Image();
+        //присвается значение src, начинается загрузка
+        img.src = src;
+        img.setAttribute('alt', '');
+        img.setAttribute('width', width);
+        img.setAttribute('alt', '298');
+        $(this).prepend(img);
+      })
+    }
+    currentItem.show(0, function(){
+      $(this).removeClass('portfolio__item--hidden')
+    })
   })
   
   
